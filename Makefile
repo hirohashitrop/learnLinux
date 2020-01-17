@@ -41,7 +41,7 @@ R:
 	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
 	sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu xenial-cran35/'
 	sudo apt update
-	sudo apt install -y r-base
+	sudo apt install -y r-base r-base-dev
 	echo "FYI : https://cran.r-project.org/bin/linux/ubuntu/README.html"
 
 RStudio:
