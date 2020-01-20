@@ -86,6 +86,10 @@ teamviwer:
 	wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
 	sudo gdebi teamviewer_amd64.deb
 
+mendeley:
+	wget https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest
+	sudo gdebi mendeleydesktop_*_amd64.deb
+
 ##############################
 #        developing          #
 ##############################
