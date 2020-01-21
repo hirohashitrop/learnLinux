@@ -89,6 +89,10 @@ teamviwer:
 mendeley:
 	wget https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest
 	sudo gdebi mendeleydesktop_*_amd64.deb
+	
+flameshot:
+	wget https://github.com/lupoDharkael/flameshot/releases/download/v0.6.0/flameshot_0.6.0_xenial_x86_64.deb
+	sudo gdebi flameshot_0.6.0_xenial_x86_64.deb
 
 ##############################
 #        developing          #
