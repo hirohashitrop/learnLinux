@@ -105,4 +105,11 @@ wine:
 	sudo apt update
 	sudo apt install --install-recommends winehq-stable
 
+#############################
+#           snap            #
+#############################
+snap:
+	sudo snap install snapd
+	snap install slack
+
 
