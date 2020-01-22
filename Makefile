@@ -110,6 +110,6 @@ wine:
 #############################
 snap:
 	sudo snap install snapd
-	snap install slack
+	sudo snap install slack --classic
 
 
