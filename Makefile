@@ -59,7 +59,7 @@ anaconda:
 ##############################
 #          Utilites          #
 ##############################
-utilAll: chrome pdf spotify skype zoom teamviwer
+utilAll: chrome pdf zoom teamviwer
 chrome:
 	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 	sudo gdebi google-chrome-stable_current_amd64.deb
@@ -68,11 +68,6 @@ pdf:
 	wget http://cdn01.foxitsoftware.com/pub/foxit/reader/desktop/linux/2.x/2.4/en_us/FoxitReader.enu.setup.2.4.4.0911.x64.run.tar.gz
 	tar xvf FoxitReader.enu.setup.2.4.4.0911.x64.run.tar.gz
 	./FoxitReader.enu.setup.2.4.4.0911\(r057d814\).x64.run
-
-spotify:
-	curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add - 
-	echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-	sudo apt update && sudo apt install spotify-client
 
 skype:
 	wget https://repo.skype.com/latest/skypeforlinux-64.deb
@@ -88,8 +83,7 @@ teamviwer:
 
 mendeley:
 	wget https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest
-	sudo gdebi mendeleydesktop_*_amd
-	64.deb
+	sudo gdebi mendeleydesktop_*_amd64.deb
 	
 flameshot:
 	wget https://github.com/lupoDharkael/flameshot/releases/download/v0.6.0/flameshot_0.6.0_xenial_x86_64.deb
@@ -123,7 +117,8 @@ Sslack:
 	sudo snap install slack --classic
 Ssublime:
 	sudo snap install sublime-text --classic
-
+Sspotify:
+	sudo snap install spotify
 
 #############################
 #     flatpak               #
@@ -134,6 +129,3 @@ flatpak:
 	sudo apt update
 	sudo apt install -y flatpak
 	flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-	
-	
-
