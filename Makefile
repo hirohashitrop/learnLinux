@@ -88,7 +88,8 @@ teamviwer:
 
 mendeley:
 	wget https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest
-	sudo gdebi mendeleydesktop_*_amd64.deb
+	sudo gdebi mendeleydesktop_*_amd
+	64.deb
 	
 flameshot:
 	wget https://github.com/lupoDharkael/flameshot/releases/download/v0.6.0/flameshot_0.6.0_xenial_x86_64.deb
@@ -100,7 +101,7 @@ qgis:
         sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 51F523511C7028C3
         sudo apt update
         sudo apt install aptitude
-        sudo aptitude install qgis python-qgis qgis-plugin-grass
+        sudo aptitude install qgis python-qgis qgis-plugin-grass # grass still fails to work...
 
 ##############################
 #        developing          #
@@ -122,6 +123,17 @@ Sslack:
 	sudo snap install slack --classic
 Ssublime:
 	sudo snap install sublime-text --classic
-	
 
+
+#############################
+#     flatpak               #
+#############################
+flatpak:
+	@echo "https://flathub.org/home"
+	sudo add-apt-repository ppa:alexlarsson/flatpak
+	sudo apt update
+	sudo apt install -y flatpak
+	flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+	
+	
 
