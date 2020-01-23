@@ -84,18 +84,18 @@ teamviwer:
 mendeley:
 	wget https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest
 	sudo gdebi mendeleydesktop_*_amd64.deb
-	
+
 flameshot:
 	wget https://github.com/lupoDharkael/flameshot/releases/download/v0.6.0/flameshot_0.6.0_xenial_x86_64.deb
 	sudo gdebi flameshot_0.6.0_xenial_x86_64.deb
 
 qgis:
         sudo add-apt-repository "deb https://qgis.org/ubuntugis xenial main"
-        sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
-        sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 51F523511C7028C3
-        sudo apt update
-        sudo apt install aptitude
-        sudo aptitude install qgis python-qgis qgis-plugin-grass # grass still fails to work...
+	sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
+	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 51F523511C7028C3
+	sudo apt update
+	sudo apt install aptitude
+	sudo aptitude install qgis python-qgis qgis-plugin-grass # grass still fails to work...
 
 ##############################
 #        developing          #
