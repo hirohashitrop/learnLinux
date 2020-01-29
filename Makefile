@@ -51,7 +51,7 @@ RStudio:
 
 Rdepend:
 	sudo apt install libgtk2.0-dev xvfb xauth xfonts-base libxt-dev libxml2-dev curl libcurl4-openssl-dev libssl-dev
-	sudo apt install -y libgdal-dev libudunits2-dev
+	sudo apt install -y libgdal-dev libudunits2-dev default-jdk
 
 anaconda:
 	wget https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh
