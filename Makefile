@@ -1,6 +1,6 @@
 message:
 	@echo "---------------------------------------------------------------------------------------"
-	@echo "                               For Ubuntu 16.04 LST                                    "
+	@echo "                          For Ubuntu 16.04 LST and 18.04.04 LST                        "
 	@echo "---------------------------------------------------------------------------------------"
 	@echo "update: update package source list"
 	@echo "nocaps: change caps lock to Ctrl [Run only onetime]"
@@ -37,9 +37,16 @@ megax:
 	wget https://www.megasoftware.net/do_force_download/megax_10.1.6-1_amd64.deb
 	sudo gdebi megax_10.1.6-1_amd64.deb
 
-R:
+R16.04:
 	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
 	sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu xenial-cran35/'
+	sudo apt update
+	sudo apt install -y r-base r-base-dev
+	echo "FYI : https://cran.r-project.org/bin/linux/ubuntu/README.html"
+
+R18.04:
+	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+	sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
 	sudo apt update
 	sudo apt install -y r-base r-base-dev
 	echo "FYI : https://cran.r-project.org/bin/linux/ubuntu/README.html"
