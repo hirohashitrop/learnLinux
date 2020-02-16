@@ -106,6 +106,10 @@ qgis:
 	sudo apt install aptitude
 	sudo aptitude install qgis python-qgis qgis-plugin-grass # grass still fails to work...
 
+synology-drive:
+	wget https://global.download.synology.com/download/Tools/SynologyDriveClient/2.0.1-11061/Ubuntu/Installer/x86_64/synology-drive-client-11061.x86_64.deb
+	sudo gdebi synology-drive-client-11061.x86_64.deb
+
 ##############################
 #        developing          #
 ##############################
