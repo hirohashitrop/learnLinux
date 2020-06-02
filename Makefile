@@ -59,7 +59,7 @@ R20.04_v4.0:
 	echo "FYI : https://cran.r-project.org/bin/linux/ubuntu/README.html"
 
 RStudio:
-	wget https://download1.rstudio.org/desktop/xenial/amd64/rstudio-1.2.5033-amd64.deb
+	wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.3.959-amd64.deb
 	sudo gdebi rstudio-1.2.5033-amd64.deb
 	wget -qO- "https://yihui.org/gh/tinytex/tools/install-unx.sh" | sh
 
