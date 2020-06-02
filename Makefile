@@ -60,7 +60,7 @@ R20.04_v4.0:
 
 RStudio:
 	wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.3.959-amd64.deb
-	sudo gdebi rstudio-1.2.5033-amd64.deb
+	sudo gdebi rstudio-1.3.959-amd64.deb
 	wget -qO- "https://yihui.org/gh/tinytex/tools/install-unx.sh" | sh
 
 Rdepend:
