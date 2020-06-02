@@ -51,6 +51,13 @@ R18.04:
 	sudo apt install -y r-base r-base-dev
 	echo "FYI : https://cran.r-project.org/bin/linux/ubuntu/README.html"
 
+R20.04_v4.0:
+	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+	sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
+	sudo apt update
+	sudo apt install -y r-base r-base-dev
+	echo "FYI : https://cran.r-project.org/bin/linux/ubuntu/README.html"
+
 RStudio:
 	wget https://download1.rstudio.org/desktop/xenial/amd64/rstudio-1.2.5033-amd64.deb
 	sudo gdebi rstudio-1.2.5033-amd64.deb
