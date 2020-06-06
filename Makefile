@@ -79,6 +79,12 @@ cyto3.7:
 	wget https://github.com/cytoscape/cytoscape/releases/download/3.7.2/Cytoscape_3_7_2_unix.sh
 	bash ./Cytoscape_3_7_2_unix.sh
 
+Resilio:
+	wget https://download-cdn.resilio.com/stable/linux-x64/resilio-sync_x64.tar.gz
+	mkdir ~/.resilio
+	tar xvf resilio-sync_x64.tar.gz -C ~/.resilio
+	echo "FYI: https://github.com/Tomonori12/resilio-pi2"
+
 ##############################
 #          Utilites          #
 ##############################
