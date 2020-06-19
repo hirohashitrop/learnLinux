@@ -120,12 +120,11 @@ flameshot:
 	sudo gdebi flameshot_0.6.0_xenial_x86_64.deb
 
 qgis:
-        sudo add-apt-repository "deb https://qgis.org/ubuntugis xenial main"
-	sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
-	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 51F523511C7028C3
+        sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 51F523511C7028C3
+	sudo add-apt-repository "deb [ arch=amd64 ] https://qgis.org/ubuntu `lsb_release -c -s` main"
 	sudo apt update
-	sudo apt install aptitude
-	sudo aptitude install qgis python-qgis qgis-plugin-grass # grass still fails to work...
+	sudo apt install qgis qgis-plugin-grass
+	echo "FYI: https://www.qgis.org/ja/site/forusers/alldownloads.html#debian-ubuntu"
 
 synology-drive:
 	wget https://global.download.synology.com/download/Tools/SynologyDriveClient/2.0.2-11078/Ubuntu/Installer/x86_64/synology-drive-client-11078.x86_64.deb
