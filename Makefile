@@ -123,7 +123,7 @@ qgis:
 	sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 51F523511C7028C3
 	sudo add-apt-repository "deb [ arch=amd64 ] https://qgis.org/ubuntu `lsb_release -c -s` main"
 	sudo apt update
-	sudo apt install qgis qgis-plugin-grass
+	sudo apt install -y qgis qgis-plugin-grass
 	echo "FYI: https://www.qgis.org/ja/site/forusers/alldownloads.html#debian-ubuntu"
 
 synology-drive:
