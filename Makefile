@@ -130,6 +130,12 @@ synology-drive:
 	wget https://global.download.synology.com/download/Tools/SynologyDriveClient/2.0.2-11078/Ubuntu/Installer/x86_64/synology-drive-client-11078.x86_64.deb
 	sudo gdebi synology-drive-client-11078.x86_64.deb
 
+mega:
+	wget https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.04_amd64.deb
+	wget https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/nautilus-megasync-xUbuntu_20.04_amd64.deb
+	sudo gdebi megasync-xUbuntu_20.04_amd64.deb
+	sudo gdebi nautilus-megasync-xUbuntu_20.04_amd64.deb
+
 ##############################
 #        developing          #
 ##############################
