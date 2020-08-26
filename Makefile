@@ -20,7 +20,7 @@ nocaps:
 	sudo grep -l 'XKBOPTIONS=""' /etc/default/keyboard | sudo xargs sed -i.bak -e 's/XKBOPTIONS=""/XKBOPTIONS="ctrl:nocaps"/g'
 
 basic:
-	sudo apt install -y gdebi-core exfat-utils git ibus-mozc curl
+	sudo apt install -y gdebi-core exfat-utils git ibus-mozc curl unar
 
 ##############################
 #     Research analysis      #
