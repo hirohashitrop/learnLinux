@@ -58,9 +58,14 @@ R20.04_v4.0:
 	sudo apt install -y r-base r-base-dev
 	echo "FYI : https://cran.r-project.org/bin/linux/ubuntu/README.html"
 
-RStudio:
+RStudio13:
 	wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.3.959-amd64.deb
 	sudo gdebi rstudio-1.3.959-amd64.deb
+	wget -qO- "https://yihui.org/gh/tinytex/tools/install-unx.sh" | sh
+
+Rstudio14:
+	wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.4.1103-amd64.deb
+	sudo gdebi rstudio-1.4.1103-amd64.deb
 	wget -qO- "https://yihui.org/gh/tinytex/tools/install-unx.sh" | sh
 
 Rdepend:
