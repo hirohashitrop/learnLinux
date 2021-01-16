@@ -26,7 +26,7 @@ basic:
 #     Research analysis      #
 ##############################
 mol: ugene megax anaconda
-stat: R RStudio
+stat: R RStudio14
 
 ugene:
 	sudo add-apt-repository ppa:iefremov/ppa
@@ -63,7 +63,7 @@ RStudio13:
 	sudo gdebi rstudio-1.3.959-amd64.deb
 	wget -qO- "https://yihui.org/gh/tinytex/tools/install-unx.sh" | sh
 
-Rstudio14:
+RStudio14:
 	wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.4.1103-amd64.deb
 	sudo gdebi rstudio-1.4.1103-amd64.deb
 	wget -qO- "https://yihui.org/gh/tinytex/tools/install-unx.sh" | sh
