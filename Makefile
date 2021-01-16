@@ -8,6 +8,7 @@ message:
 	@echo "mol: install UniproGENE and MEGAX, Aaconda"
 	@echo "stat: install R and RStudio"
 	@echo "utilAll: install chrome pdf spotify skype zoom teamviwer"
+	@echo "DragNDrop: https://ubuntuhandbook.org/index.php/2020/10/enable-drag-drop-desktop-ubuntu-20-04/"
 	@echo "---------------------------------------------------------------------------------------"
 
 ##############################
