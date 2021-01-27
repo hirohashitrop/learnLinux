@@ -142,6 +142,11 @@ mega:
 	sudo gdebi megasync-xUbuntu_20.04_amd64.deb
 	sudo gdebi nautilus-megasync-xUbuntu_20.04_amd64.deb
 
+stickynotes:
+	sudo add-apt-repository ppa:umang/indicator-stickynotes
+	sudo apt-get update
+	sudo apt-get install indicator-stickynotes
+
 ##############################
 #        developing          #
 ##############################
