@@ -74,8 +74,8 @@ Rdepend:
 	sudo apt install -y libgdal-dev libudunits2-dev default-jdk
 
 anaconda:
-	wget https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh
-	bash Anaconda3-2019.10-Linux-x86_64.sh
+	wget https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
+	bash Anaconda3-2020.11-Linux-x86_64.sh
 
 cyto3.8:
 	wget https://github.com/cytoscape/cytoscape/releases/download/3.8.0/Cytoscape_3_8_0_unix.sh
