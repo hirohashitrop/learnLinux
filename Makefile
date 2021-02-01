@@ -1,6 +1,6 @@
 message:
 	@echo "---------------------------------------------------------------------------------------"
-	@echo "                          For Ubuntu 16.04 LST and 18.04.04 LST                        "
+	@echo "                  For Ubuntu 16.04 LST and 18.04.04 LST and 20.04 LTS                  "
 	@echo "---------------------------------------------------------------------------------------"
 	@echo "update: update package source list"
 	@echo "nocaps: change caps lock to Ctrl [Run only onetime]"
@@ -146,7 +146,28 @@ stickynotes:
 	sudo add-apt-repository ppa:umang/indicator-stickynotes
 	sudo apt update
 	sudo apt install -y indicator-stickynotes
+	
+qgis(2):
+	sudo apt install gnupg software-properties-common
+	wget -qO - https://qgis.org/downloads/qgis-2020.gpg.key | sudo gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/qgis-archive.gpg --import
+	sudo chmod a+r /etc/apt/trusted.gpg.d/qgis-archive.gpg
+	sudo add-apt-repository "deb https://qgis.org/debian `lsb_release -c -s` main"
+	sudo apt update
+	sudo apt install qgis qgis-plugin-grass python-qgis
+	
+grass: #on anaconda environment
+	sudo apt-get install grass grass-doc
+	conda install -c conda-forge wxpython
 
+synology-drive:
+	wget https://global.download.synology.com/download/Tools/SynologyDriveClient/2.0.2-11078/Ubuntu/Installer/x86_64/synology-drive-client-11078.x86_64.deb
+	sudo gdebi synology-drive-client-11078.x86_64.deb
+
+mega.nz:
+	wget https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.04_amd64.deb
+	sudo gdebi megasync-xUbuntu_20.04_amd64.deb
+
+	
 ##############################
 #        developing          #
 ##############################
